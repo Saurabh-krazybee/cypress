@@ -1,0 +1,24 @@
+{
+    "code": 200,
+    "message": "Found States and cities",
+    "data": [
+        {
+            "cities": [
+                {
+                    "city": "Lucknow"
+                },
+                {
+                    "city": "Allahabad"
+                },
+                {
+                    "city": "Kanpur"
+                },
+                {
+                    "city": "Agra"
+                }
+            ],
+            "state": "Uttar Pradesh"
+        }
+    ],
+    "success": true
+}

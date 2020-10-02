@@ -1,26 +1,24 @@
-describe('login',()=>{
-    it('Visit link', () => {
-        cy.visit('https://www.facebook.com/login/');
+describe("login", () => {
+  it("Visit link", () => {
+    cy.visit("https://www.facebook.com/login/");
 
-        // cy.get('#email').type(Cypress.env('Email'));
-        cy.get('#email').type("kanwarpal.sunkariya@krazybee.com");
+    cy.get("#email").type(Cypress.env("Email"));
+    // cy.get('#email').type();
 
-        // cy.get('#pass').type(Cypress.env('Pass'));
-        cy.get('#pass').type("krazybee.707");
-         
-        cy.get('#loginbutton').click();
+    cy.get("#pass").type(Cypress.env("Pass"));
 
-        cy.wait(1000)
+    cy.get("#loginbutton").click();
 
-        cy.get('[title=Profile]').click();
+    cy.wait(1000);
 
-        cy.url().should('include','/krazybee707')
+    cy.get("[title=Profile]").click();
 
-        cy.get("#userNavigationLabel").wait(10000).click();
+    cy.url().should("include", "/krazybee707");
 
-        cy.wait(5000)
+    cy.get("#userNavigationLabel").wait(10000).click();
 
-        cy.contains('Log Out').click();       
-    
-    }); 
-})
+    cy.wait(5000);
+
+    cy.contains("Log Out").click();
+  });
+});

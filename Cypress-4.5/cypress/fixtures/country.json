@@ -1,0 +1,15 @@
+{
+    "code": 200,
+    "message": "Found Countries",
+    "data": [
+        {
+            "country": "India",
+            "locality": "in"
+        },
+        {
+            "country":"Japan",
+            "locality":"jp"
+        }
+    ],
+    "success": true
+}
