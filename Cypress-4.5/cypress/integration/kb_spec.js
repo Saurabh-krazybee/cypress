@@ -70,7 +70,7 @@ describe("Krazybee login", () => {
     // click on Advanced Mobile Authentication
     cy.get(".skins__SummaryCon-eWQpKA > :nth-child(3) > :nth-child(1)")
       .should(
-        "have.text",
+        "have.text", 
         "Advanced Mobile AuthenticationRe-verify your official mobile number"
       )
       .click()
