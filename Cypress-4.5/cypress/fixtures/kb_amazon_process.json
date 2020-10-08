@@ -51,11 +51,11 @@
             },
             {
                 "offerName": "ecommConnect",
-                "offerStatus": "new",
+                "offerStatus": "data_processing",
                 "reason": "",
                 "offers": [
                     {
-                        "OfferStatus": "new",
+                        "OfferStatus": "processing",
                         "OfferName": "amazonScrapping",
                         "Reason": "",
                         "Icon": "icwallet-pd",
@@ -64,7 +64,7 @@
                         "ErrorDesc": ""
                     },
                     {
-                        "OfferStatus": "new",
+                        "OfferStatus": "processing",
                         "OfferName": "flipkartScrapping",
                         "Reason": "",
                         "Icon": "icwallet-pd",
