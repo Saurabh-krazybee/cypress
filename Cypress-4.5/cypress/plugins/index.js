@@ -19,10 +19,20 @@
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
 // }
-const { GoogleSocialLogin } = require("cypress-social-logins").plugins;
+
+////Google social login plugin
+// const { GoogleSocialLogin } = require("cypress-social-logins").plugins;
+
+// module.exports = (on, config) => {
+//   on("task", {
+//     GoogleSocialLogin: GoogleSocialLogin
+//   });
+// };
+
+const {
+  addMatchImageSnapshotPlugin,
+} = require('cypress-image-snapshot/plugin');
 
 module.exports = (on, config) => {
-  on("task", {
-    GoogleSocialLogin: GoogleSocialLogin
-  });
+  addMatchImageSnapshotPlugin(on, config);
 };
